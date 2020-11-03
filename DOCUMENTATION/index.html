@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Documentation</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+	<style type="text/css">
+		body {
+		padding-top: 60px;
+		padding-bottom: 40px;
+		}
+	</style>
+	<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" id="top">
+	<!-- Documentation Navbar -->
+
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse"></a> <a class="brand" href="#">Shuttea</a>
+
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li><a class="active" href="#top">Top</a></li>
+
+						<li><a href="#markup">Markup</a></li>
+
+						<li><a href="#plugins">Plugins Used</a></li>
+						
+						<li><a href="#styles">Styles</a></li>
+
+						<li><a href="#javascript">JavaScript</a></li>
+
+						<li><a href="#credits">Credits</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div><!-- End of Navbar -->
+	<!-- Main Container Beginning -->
+
+	<div class="container">
+		<div class="masthead">
+			<h1>Shuttea - Portfolio/Blog Template for Photographers - Documentation</h1>
+
+			<p>Fully responsive multi-page template built on Bootstrap 3 Framework.</p>
+
+			<p class="download-info"><a class="btn btn-primary btn-large" href="http://themeforest.net/user/netgon">Item Support</a></p>
+		</div><!-- masthead -->
+
+		<div id="intro">
+			<p class="highlight hero-unit">Thank you for purchasing our item. If you have any questions that are beyond the scope of this help file, please feel free to email via our user page contact form <a href="http://themeforest.net/user/netgon">here</a>. Thanks so much!</p>
+		</div><!-- intro -->
+
+		<section id="markup">
+			<div class="page-header">
+				<h1>Markup <small>Markup customization and highlights</small></h1>
+			</div>
+			<p>
+				Shuttea - is a responsive HTML5 template that intended to be used preferably by photographers for their promotional purposes. It's crafted with minimalistic approach and distractless design which will allow your users to dive into your creative photo life. The template has a nice responsive fullscreen gallery which you can easily use to showcase your beautiful works with optional short description and technical properties for each photo.
+			</p>
+			<hr>
+
+			<div class="row">
+				<div class="span3">
+					<h3>General Markup</h3>
+
+					<p>The general template structure is the same throughout the template. Here is the general structure.</p>
+				</div>
+
+				<div class="span9">
+					<pre class="prettyprint linenums">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1&quot;&gt;
+    &lt;title&gt;My Site&lt;/title&gt;&lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;js/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+    &lt;!--[if lte IE 8]&gt;
+    &lt;script src=&quot;js/respond.js&quot;/&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+    &lt;!-- CSS Links--&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/bootstrap.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/pe-icon-7-stroke.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/freepik.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/animate.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/blueimp-gallery.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/owl.carousel.min.css&quot;&gt;
+    &lt;!-- Custom CSS--&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+    &lt;!-- ICONS Links--&gt;
+    &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;57x57&quot; href=&quot;img/favicon/apple-icon-57x57.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;60x60&quot; href=&quot;img/favicon/apple-icon-60x60.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;72x72&quot; href=&quot;img/favicon/apple-icon-72x72.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;76x76&quot; href=&quot;img/favicon/apple-icon-76x76.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;114x114&quot; href=&quot;img/favicon/apple-icon-114x114.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;120x120&quot; href=&quot;img/favicon/apple-icon-120x120.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;144x144&quot; href=&quot;img/favicon/apple-icon-144x144.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;152x152&quot; href=&quot;img/favicon/apple-icon-152x152.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;180x180&quot; href=&quot;img/favicon/apple-icon-180x180.png&quot;&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;192x192&quot; href=&quot;img/favicon/android-icon-192x192.png&quot;&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;32x32&quot; href=&quot;img/favicon/favicon-32x32.png&quot;&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;96x96&quot; href=&quot;img/favicon/favicon-96x96.png&quot;&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;16x16&quot; href=&quot;img/favicon/favicon-16x16.png&quot;&gt;
+    &lt;link rel=&quot;manifest&quot; href=&quot;img/favicon/manifest.json&quot;&gt;
+    &lt;meta name=&quot;msapplication-TileColor&quot; content=&quot;#ffffff&quot;&gt;
+    &lt;meta name=&quot;msapplication-TileImage&quot; content=&quot;img/favicon/ms-icon-144x144.png&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot;&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+</pre>
+				</div>
+			</div>
+			<hr>
+
+			<div class="row">
+                <div class="span3">
+                    <h3>Features</h3>
+
+                    <p>Main template features</p>
+                </div>
+
+                <div class="span9">
+                    <ol>
+                        <li>Bootstrap 3 grid</li>
+                        <li>Fully responsive</li>
+                        <li>Minimalistic bold design</li>
+                        <li>Detailed UI & typography</li>
+                        <li>Valid and easy-to-customize code</li>
+                        <li>Fullscreen photo gallery</li>
+                        <li>Cross browser optimization</li>
+                        <li>Masonry portfolio grid</li>
+                        <li>Isotope filtering (save $25)</li>
+                        <li>Parallax effect</li>
+                        <li>Particles animations</li>
+                        <li>Hamburger menu</li>
+                        <li>Blog pages included</li>
+                        <li>and much more... </li>
+                    </ol>
+                </div>
+            </div>
+
+			<hr>
+
+			<div class="row">
+				<div class="span12">
+					<p class="highlight hero-unit">In the zip package you download you will find 2 folders: HTML and DOCUMENTATION.</p>
+					<ul>
+						<li>HTML FOLDER: this is the folder that concerns you. It contains the main html and css files. Make the customizations you need and upload this folder files to you server.</li>
+
+						<li>DOCUMENTATION FOLDER: info about this template</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+
+		</section><!-- Markup -->
+
+		<section id="plugins">
+			<div class="page-header">
+				<h1>Plug-ins Used <small>Small description of every plugin used.</small></h1>
+			</div>
+
+			<div class="row">
+				<div class="span12">
+					<table class="table table-bordered table-striped">
+						<thead>
+							<tr>
+								<th>Plugin Name</th>
+
+								<th>Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td><code>jQuery</code></td>
+
+								<td>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.</td>
+							</tr>
+
+							<tr>
+								<td><code>Modernizr</code></td>
+
+								<td>Modernizr tells you what HTML, CSS and JavaScript features the user’s browser has to offer.</td>
+							</tr>
+
+							<tr>
+								<td><code>jQuery Simple Equal Heights</code></td>
+
+								<td>Simple jQuery plugin to equalize heights of multiple elements on a page.</td>
+							</tr>
+
+							<tr>
+								<td><code>particles.js</code></td>
+
+								<td>A lightweight JavaScript library for creating particles.</td>
+							</tr>			
+
+							<tr>
+								<td><code>Stellar.js</code></td>
+
+								<td>Parallax scrolling library.</td>
+							</tr>			
+
+							<tr>
+								<td><code>Waypoints</code></td>
+
+								<td>Waypoints is a library that makes it easy to execute a function whenever you scroll to an element.</td>
+							</tr>
+
+							<tr>
+								<td><code>Masonry</code></td>
+
+								<td>Masonry is a JavaScript grid layout library. It works by placing elements in optimal position based on available vertical space, sort of like a mason fitting stones in a wall.</td>
+							</tr>
+
+							<tr>
+								<td><code>imagesLoaded</code></td>
+
+								<td>Detects when images have been loaded.</td>
+							</tr>			
+
+							<tr>
+								<td><code>Isotope</code></td>
+
+								<td>Filter & sort layouts.</td>
+							</tr>		
+
+							<tr>
+								<td><code>blueimp Gallery</code></td>
+
+								<td>A touch-enabled, responsive and customizable image & video gallery, carousel and lightbox, optimized for both mobile and desktop web browsers.</td>
+							</tr>		
+
+							<tr>
+								<td><code>Owl Carousel</code></td>
+
+								<td>Responsive carousel slider.</td>
+							</tr>
+
+							<tr>
+								<td><code>Counter-Up</code></td>
+
+								<td>Counter-Up is a jQuery plugin that animates a number from zero (counting up towards it).</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<hr>
+		</section>
+
+		<section id="styles">
+			<div class="page-header">
+				<h1>Styles <small>Styles customization and highlights</small></h1>
+			</div>
+
+			<div class="row">
+				<div class="span3">
+					<h3>Stylesheets</h3>
+
+					<p>Here's a list of the stylesheet files we are using with this template, you can find more information opening each file:</p>
+				</div>
+
+				<div class="span9">
+					<table class="table table-bordered table-striped">
+						<thead>
+							<tr>
+								<th>File Name</th>
+
+								<th>Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td><code>css/bootstrap.min.css</code></td>
+
+								<td>Bootstrap base CSS file.</td>
+							</tr>
+
+							<tr>
+								<td><code>css/pe-icon-7-stroke.css</code></td>
+
+								<td>Pixeden Stroke 7 Icon Font Set.</td>
+							</tr>
+
+							<tr>
+								<td><code>css/freepik.css</code></td>
+
+								<td>Custom icons set by Freepik.</td>
+							</tr>
+
+							<tr>
+								<td><code>css/animate.min.css</code></td>
+
+								<td>Animate.css - library for creating animation effects.</td>
+							</tr>
+
+							<tr>
+								<td><code>css/blueimp-gallery.css</code></td>
+
+								<td>Blueimp gallery - used for styling portfolio galleries.</td>
+							</tr>
+
+							<tr>
+								<td><code>css/owl.carousel.min.css</code></td>
+
+								<td>Owl carousel - CSS styling for owl carousel slider.</td>
+							</tr>
+
+							<tr>
+								<td><code>style.css</code></td>
+
+								<td>Main Stylesheet of the template - where you will find most of the customizable CSS.</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			
+			
+			
+		</section><!-- Styles -->
+
+
+		<section id="javascript">
+
+
+
+			<div class="page-header">
+				<h1>JavaScript <small>JavaScript customization and highlights</small></h1>
+			</div>
+
+			<div class="row">
+				<div class="span3">
+					<h3>JavaScript Files</h3>
+
+					<p>Here's a list of the javascript files we are using with this template.</p>
+				</div>
+
+				<div class="span9">
+					<table class="table table-bordered table-striped">
+					   <thead>
+							<tr>
+								<th>Plugin Filename</th>
+
+								<th>Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td><code>js/jquery.min.js</code></td>
+
+								<td>jQuery library</td>
+							</tr>
+
+							<tr>
+								<td><code>js/bootstrap.min.js</code></td>
+
+								<td>Bootstrap's javascript file</td>
+							</tr>
+
+							<tr>
+								<td><code>js/modernizr.custom.js</code></td>
+
+								<td>Modernizr tells you what HTML, CSS and JavaScript features the user’s browser has to offer.</td>
+							</tr>
+
+							<tr>
+								<td><code>js/jquery.equalheights.min.js</code></td>
+
+								<td>This plugin sets pricing tables to the equal heights.</td>
+							</tr>
+
+							<tr>
+								<td><code>js/particles.min.js</code></td>
+
+								<td>Creates particles canvas in the intro section.</td>
+							</tr>
+
+							<tr>
+								<td><code>js/jquery.stellar.min.js</code></td>
+
+								<td>Creates parallax effect.</td>
+							</tr>
+
+							<tr>
+								<td><code>js/jquery.waypoints.min.js</code></td>
+
+								<td>Tracing user's scrolling. Used in combo with Animate.css to create onscroll animations.</td>
+							</tr>
+
+							<tr>
+								<td><code>js/masonry.pkgd.min.js</code></td>
+
+								<td>Creates photo portfolio layout.</td>
+							</tr>
+
+							<tr>
+								<td><code>js/imagesloaded.pkgd.min.js</code></td>
+
+								<td>Checks if all images are loaded or confirmed broken. That allows to build masonry grid correctly.</td>
+							</tr>
+
+							<tr>
+								<td><code>js/isotope.pkgd.min.js</code></td>
+
+								<td>Filters portfolio categories.</td>
+							</tr>
+
+							<tr>
+								<td><code>js/jquery.blueimp-gallery.min.js</code></td>
+
+								<td>Inits portfolio gallery.</td>
+							</tr>
+
+							<tr>
+								<td><code>js/owl.carousel.min.js</code></td>
+
+								<td>Carousel slider for testimonials section.</td>
+							</tr>
+
+							<tr>
+								<td><code>js/jquery.counterup.js</code></td>
+
+								<td>Animated counters in fun facts section</td>
+							</tr>
+
+							<tr>
+								<td><code>js/common.js</code></td>
+								<td>js file for initialization and customization of the plugins found above</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<hr>
+
+			<div class="row">
+				<div class="span3">
+					<h3>Customizing carousel testimonials</h3>
+
+					<p>There are a lot of parameters that you can safely change to customize the behavior of owl slider in Testimonials section. Simply open <code>js/common.js</code> file with any text editor and jump to the 78 line. Here are some parameters you can change without worry of breaking the page: <code>autoplay, autoplaySpeed, autoplayTimeout, autoplayHoverPause, autoHeight, mouseDrag, touchDrag</code><br>For more information, please refer to Owl carousel official documentation.</p>
+				</div>
+
+				<div class="span9">
+					<pre class="prettyprint js linenums:78">
+$('#carousel-tesimonials').owlCarousel({
+		autoplay: false,
+		autoplaySpeed: 600,
+		autoplayTimeout: 6000,
+		autoplayHoverPause: true,
+		autoHeight: true,
+		loop: true,
+		items: 1,
+		nav: false,
+		dots: true,
+		dotsContainer: '#carousel-tesimonials-dots',
+		mouseDrag: false,
+		touchDrag: false,
+		animateOut: 'fadeOut',
+		animateIn: 'fadeIn',
+});
+					</pre>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="span3">
+					<h3>Customizing facts counters</h3>
+
+					<p>Open <code>js/common.js</code> file with any text editor and jump to the 126 line. You can change delay and duration of the counters animation. Just set those parameters in milliseconds.</p>
+				</div>
+
+				<div class="span9">
+					<pre class="prettyprint js linenums:126">
+$('.fact-counter-wrapper .counting-number').counterUp({
+	delay: 40,
+	time: 4000
+});
+					</pre>
+				</div>
+			</div>			
+			<hr>
+		</section><!-- JavaScript -->
+
+		<section id="credits">
+			<div class="page-header">
+				<h1>Credits Files <small>Some of our credits and sources</small></h1>
+			</div>
+
+			<p>We've used the following images, icons or other files as listed.</p>
+
+			<h3>JavaScript</h3>
+
+			<ol>
+				<li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+				<li><a href="http://jquery.com/">jQuery</a></li>
+				<li><a href="https://modernizr.com/">Modernizr</a></li>
+				<li><a href="https://github.com/mattbanks/jQuery.equalHeights">jQuery Simple Equal Heights</a></li>
+				<li><a href="https://github.com/VincentGarreau/particles.js">particles.js</a></li>
+				<li><a href="https://github.com/markdalgleish/stellar.js">Stellar.js</a></li>
+				<li><a href="https://github.com/imakewebthings/waypoints">Waypoints</a></li>
+				<li><a href="http://masonry.desandro.com/">Masonry</a></li>
+				<li><a href="https://github.com/desandro/imagesloaded">imagesLoaded</a></li>
+				<li><a href="http://isotope.metafizzy.co/">Isotope</a></li>
+				<li><a href="https://blueimp.github.io/">Blueimp Gallery</a></li>
+				<li><a href="http://owlcarousel.owlgraphic.com/">Owl carousel</a></li>
+				<li><a href="https://github.com/bfintal/Counter-Up/">Counter-Up</a></li>
+				<li><a href="https://github.com/scottjehl/Respond">Respond.js</a></li>
+				<li><a href="https://github.com/afarkas/html5shiv">The HTML5 Shiv</a></li>
+			</ol>
+
+			<h3>Fonts & Icons</h3>
+
+			<ol>
+				<li><a href="http://www.freepik.com/">Freepik</a></li>
+				<li><a href="http://www.pixeden.com/icon-fonts/stroke-7-icon-font-set">Pixeden Stroke 7 Icon Font Set</a></li>
+				<li><a href="https://www.google.com/fonts/">Google Fonts</a></li>
+			</ol>
+
+			<h3>Images</h3>
+
+			<ol>
+				<li><a href="http://www.unsplash.com">Unsplash</a></li>
+				<li><a href="http://www.pixabay.com">Pixabay</a></li>
+			</ol>
+
+		</section><!-- Credits -->
+
+		<hr>
+
+		<div class="goodbye">
+			<p>Once again, thank you so much for purchasing this item. As we said at the beginning, we'd be glad to help you if you have any questions relating to this item. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+		
+			<p>Our profile page - <a href="http://themeforest.net/user/netgon">http://themeforest.net/user/netgon</a></p>
+		</div>
+		<hr>
+
+		<footer>
+			<p>© Netgon 2016</p>
+		</footer>
+	</div><!-- /container -->
+	
+	<!-- JS -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/scripts.js"></script>
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+	<script src="assets/js/bootstrap-transition.js"></script>
+	<script src="assets/js/bootstrap-alert.js"></script>
+	<script src="assets/js/bootstrap-modal.js"></script>
+	<script src="assets/js/bootstrap-dropdown.js"></script>
+	<script src="assets/js/bootstrap-scrollspy.js"></script>
+	<script src="assets/js/bootstrap-tab.js"></script>
+	<script src="assets/js/bootstrap-tooltip.js"></script>
+	<script src="assets/js/bootstrap-popover.js"></script>
+	<script src="assets/js/bootstrap-button.js"></script>
+	<script src="assets/js/bootstrap-collapse.js"></script>
+
+</body>
+</html>
